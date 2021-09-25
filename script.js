@@ -26,6 +26,7 @@
         {       
             cityName.value=`${localStorage.getItem("lastLocation")}`;            
             crossBtn.style.display=(cityName.value==""?'none':'inline-block')
+            {cityName.value!="null"?fetchWeather():fetchLocation(); cityName.value=""}
             fetchWeather();
         })
 
